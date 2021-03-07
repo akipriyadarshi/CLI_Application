@@ -1,9 +1,11 @@
 object Implement extends App {
   var res=""
+  //method to print all the flags and its working
   def getHelp():String={
     for((v,k)<-myMap)  res= res+"    "+v+" --->>>  "+k+"\n"
     res
   }
+  //using Map data structure to map my flags to its values
   val myMap = Map("-a" -> "Armenia", "-b" -> "Bermuda", "-c" -> "Canada", "-d" -> "Denmark"
     , "-e" -> "Egypt", "-f" -> "France", "-g" -> "Germany", "-h" -> "Hungary", "-i" -> "India"
     , "-j" -> "Japan", "-k" -> "Kenya", "-l" -> "Laos", "-m" -> "Maldives", "-n" -> "Nepal", "-o" -> "Oman"
@@ -11,7 +13,7 @@ object Implement extends App {
     , "-u" -> "Uzbekistan", "-v" -> "Vietnam", "-w" -> "NONE", "-x" -> "NONE", "-y" -> "Yemen", "-z" -> "Zimbabwe")
 
 
-
+//this method helps to find correct message that should be printed after giving argument with flag
   def find(len:Int,args:Array[String]):String={
    
     len match {
@@ -30,7 +32,7 @@ object Implement extends App {
   }
 
 
-
+     
     print(find(args.length,args))
   
 
