@@ -18,5 +18,10 @@ A command line utility(made with scala) to print messages
       
       4.<your-name> -ef
        Please enter Please enter valid flag:  type <your-name>--help type --help <your-name> for help
+       
+       5. for getting help 
+        <your-name> --help
+       
+       
 
        
