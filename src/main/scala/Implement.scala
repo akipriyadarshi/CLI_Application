@@ -1,9 +1,9 @@
 object Implement extends App {
-  var res=""
+  var result=""
   //method to print all the flags and its working
   def getHelp():String={
-    for((v,k)<-myMap)  res= res+"    "+v+" --->>>  "+k+"\n"
-    res
+    for((v,k)<-myMap)  result= result+"    "+v+" --->>>  "+k+"\n"
+    result
   }
   //using Map data structure to map my flags to its values
   val myMap = Map("-a" -> "Armenia", "-b" -> "Bermuda", "-c" -> "Canada", "-d" -> "Denmark"
