@@ -13,7 +13,7 @@ object Implement extends App {
 
 
   def find(len:Int,args:Array[String]):String={
-    var s=""
+   
     len match {
       case 0 => "Please enter argument as your name"
       case 1 => if (args(0)(0) != '-') "HELLO " + args(0).toUpperCase() else "Please provide argument with flag"
@@ -32,7 +32,7 @@ object Implement extends App {
 
 
     print(find(args.length,args))
-  //println(args(0)(0).getClass)
+  
 
 
 }
